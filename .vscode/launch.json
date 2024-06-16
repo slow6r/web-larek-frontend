@@ -1,0 +1,41 @@
+{
+  "configurations": [
+    {
+      "command": "npm start",
+      "name": "Web server debug",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+
+    {
+      "name": "Standalone debug",
+      "program": "${workspaceFolder}/src/index.ts",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    }
+  ]
+}
+
+// {
+//   "configurations": [
+//     {
+//       "type": "node",
+//       "request": "launch",
+//       "name": "Launch Webpack Bundled App",
+//       "skipFiles": [
+//           "<node_internals>/**"
+//       ],
+//       "program": "${workspaceFolder}/src/index.ts",
+//       "sourceMaps": true,
+//       "outFiles": ["${workspaceFolder}/dist/*.js"], // Adjust path to where Webpack outputs your files
+//       "sourceMapPathOverrides": {
+//           "webpack://mvc/*": "${workspaceRoot}/*"
+//       },
+//       "trace": true
+
+//     }
+//   ]
+// }

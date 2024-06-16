@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "type": "shell",
+        "label": "Сборка для разработки",
+        "command": "npm",
+        "args": ["run", "build:dev"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [],
+        "detail": "Сборка проекта"
+      },
+
+      {
+        "type": "shell",
+        "label": "Сборка для продакшена",
+        "command": "npm",
+        "args": ["run", "build"],
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        },
+        "problemMatcher": [],
+        "detail": "Сборка проекта"
+      },
+
+      {
+        "type": "shell",
+        "label": "Установить зависимости",
+        "command": "npm",
+        "args": ["install"],
+        "problemMatcher": [],
+        "detail": "Установка зависимостей"
+      }
+    ]
+  }
